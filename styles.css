@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bagel Fat One';
+    background-color: #e0e1dd;
+    justify-content: center;
+    color: #0d1b2a;
 }
 
 .bagel-fat-one-regular {
@@ -11,46 +14,42 @@
   font-style: normal;
 }
 
-main {
-    height: 100vh;
-    background: url(img/veggies.jpg) no-repeat center center/ cover;
-    background-color: #fff;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 20px;
 }
 
-/* #question-container {
+main {
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+}
+
+#question-container {
     width: 100%;
+    font-size: 1.5rem;
+    float: left;
     padding: 10px 10px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 3px;
     margin-bottom: 20px;
     display: flex;
-} */
+}
 
-/* #multiple-choice-container {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 3px;
+#multiple-choice-container {
+    width: 100%;    
     padding: 5px;
     margin-bottom: 5px;
-
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* button {
-    flex: 1;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-} */
+    font-size: 1.2rem;
+}
 
 #feedback {
     visibility: hidden;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#next {
+    float: right;
 }
 
 .disabled {
@@ -67,17 +66,19 @@ button {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #04AA6D;
+  
+  background-color: #778da9;
   border: none;
   border-radius: 10px;
   box-shadow: 0 9px #999;
 }
 
-button:hover {background-color: #3e8e41}
+button:hover {
+    background-color: #415a77
+}
 
 button:active {
-  background-color: #3e8e41;
+  background-color: #415a77;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
