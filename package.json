@@ -1,0 +1,21 @@
+{
+  "name": "practice-quizapp-sarah-p",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skperry99/practice-quizApp-Sarah-P.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skperry99/practice-quizApp-Sarah-P/issues"
+  },
+  "homepage": "https://github.com/skperry99/practice-quizApp-Sarah-P#readme",
+  "description": ""
+}
