@@ -1,6 +1,6 @@
 import { quizArray } from "./quiz.js";
 import { rightResponse, wrongResponse } from "./feedback.js";
-import { shuffleArray, getRandom, disableButtonsInDiv, enableButtonsInDiv } from "./helpers.js";
+import { shuffleArray, getRandom, getRandomArray, disableButtonsInDiv, enableButtonsInDiv } from "./helpers.js";
 
 // TODO - add option to choose number of quiz questions
 // add "Retake Quiz" button
@@ -15,12 +15,11 @@ const labelC = document.getElementById("label-c");
 const labelD = document.getElementById("label-d");
 const feedback = document.getElementById("feedback");
 const nxtQ = document.getElementById("nxtQ");
-const multipleChoiceContainer = document.getElementById(
-  "multiple-choice-container"
-);
+const multipleChoiceContainer = document.getElementById("multiple-choice-container");
 const buttons = multipleChoiceContainer.querySelectorAll("button");
 
-let shuffledArray = shuffleArray(quizArray);
+let pickQuizLength = getRandomArray(quizArray, 5);
+let shuffledArray = shuffleArray(pickQuizLength);
 
 let i = 0;
 let score = 0;

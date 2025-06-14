@@ -13,6 +13,15 @@ function getRandom(array) {
   return array[randomIndex];
 }
 
+function getRandomArray(array, numElements) {
+  let randomArray = [];
+  for(let i=0; i < numElements; i++) {
+    randomArray.push(getRandom(array));
+  }
+  
+  return randomArray;
+}
+
 function disableButtonsInDiv(divId) {
   const div = document.getElementById(divId);
   if (div) {
@@ -33,4 +42,4 @@ function enableButtonsInDiv(divId) {
   }
 }
 
-export { shuffleArray, getRandom, disableButtonsInDiv, enableButtonsInDiv };
+export { shuffleArray, getRandom, getRandomArray, disableButtonsInDiv, enableButtonsInDiv };
